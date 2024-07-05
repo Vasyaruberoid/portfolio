@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Group from "../group/Group";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
+import img from '../../icons/I.jpg';
 
 function Main() {
   return (
@@ -12,8 +13,8 @@ function Main() {
           Hi 👋, My name is Vasiliy Starovoytov I build things for web
         </StyleH1>
         <div>
-          {" "}
-          <StyleImg src="" alt="myPhoto" />
+          
+          <StyleImg src={img} alt="myPhoto" />
         </div>
       </StyleBox>
       <Group />
@@ -38,6 +39,7 @@ const StyleBox = styled.div`
   width: 1250px;
   height: 350px;
   margin-top: 200px;
+ 
 `;
 
 const StyleImg = styled.img`
@@ -45,7 +47,8 @@ const StyleImg = styled.img`
   height: 300px;
   border-radius: 50%;
   border: 9px solid black;
-  background-repeat: no-repeat;
+object-fit: cover;
+ 
 `;
 
 const StyleH1 = styled.h1`
