@@ -53,8 +53,8 @@ const StyledBurgerMenu = styled.div`
     float: right;
     width: 40px;
     height: 40px;
-top:10px;
-right:10px;
+top:20px;
+right:20px;
 z-index:100;
     button {
       background: transparent;
@@ -95,7 +95,7 @@ const StyleA = styled.div`
 
 const BurgerPopup = styled.nav`
   @media (max-width: 1420px) {
-    position: fixed;;
+    position: fixed;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -107,9 +107,9 @@ const BurgerPopup = styled.nav`
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
-    z-index:-1;
-    width:100%;
-    height:100vh;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
 
     ul {
       display: flex;
@@ -141,7 +141,7 @@ const BurgerPopup = styled.nav`
       opacity: 1;
       pointer-events: auto;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       z-index: 1000;
     }
     &.closed {

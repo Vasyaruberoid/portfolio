@@ -39,17 +39,47 @@ const Skills = () => {
 };
 
 const StyleWrapper = styled.div`
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 500px;
-  width: 100%;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  width: 1300px;
+  margin: 0px auto;
   h1 {
     font-size: 48px;
   }
   h2 {
     font-size: 32px;
+  }
+
+  @media (max-width: 1420px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 360px) {
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    margin: 100px auto;
   }
 `;
 
@@ -59,6 +89,22 @@ const StyleBox = styled.div`
   gap: 100px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-row-columns: repeat(2, 1fr);
+@media(max-width:1420px) {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-row-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+    @media(max-width:768px) {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-row-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+     @media(max-width:360px) {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-row-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 `;
 
 export default Skills;

@@ -83,16 +83,35 @@ const Group = () => {
 };
 
 const StyleWrapper = styled.div`
-  display: grid;
-  width: 50vw;
-  height: 700px;
+  display: flex;
+  max-width: 50vw;
+  width: 100%;
+  
+  flex-direction: column;
+  min-height: 100vh;
+  margin-right: 550px;
   p {
     font-size: 18px;
   }
   h2 {
     font-size: 42px;
   }
-  margin-top: 200px;
+
+  @media (max-width: 1028px) {
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 360px) {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 const StyleWrapperWork = styled.div``;

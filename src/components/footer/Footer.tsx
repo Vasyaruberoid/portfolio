@@ -28,7 +28,7 @@ function Footer() {
           <li>Contact</li>
         </StyleNav>
         <div>
-          <p>Designed and built by Pavan MG with Love & Coffee</p>
+          <p>Designed and built by Vasiliy Starovoytov with Love & Coffee</p>
         </div>
       </StyleBotFooter>
     </StyleFooter>
@@ -36,14 +36,7 @@ function Footer() {
 }
 
 const StyleFooter = styled.footer`
-  display: grid;
-  width: 90%;
-  height: 200px;
-  h1 {
-    float: left;
-    font-size: 30px;
-  }
-  margin: 0px auto;
+margin-top:50%;
 `;
 
 const StyleNav = styled.nav`

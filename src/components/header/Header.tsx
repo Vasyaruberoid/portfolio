@@ -38,6 +38,7 @@ const StyleHeader = styled.header`
   font-size: 20px;
   margin: 20px auto;
   @media (max-width: 1420px) {
+  width: 90%;
   }
   @media (max-width: 768px) {
     flex-direction: column;
@@ -49,10 +50,10 @@ const StyleHeader = styled.header`
 
 const StyleH1 = styled.h1`
   font-size: 30px;
+  left: 0;
+  top: 0;
   margin: 0;
-  @media (max-width: 1080px) {
-    font-size: 25px;
-  }
+
 `;
 
 const StyleNav = styled.nav`
@@ -61,9 +62,6 @@ const StyleNav = styled.nav`
   list-style-type: none;
   gap: 30px;
 
-  &:hover {
-    color: gold;
-  }
   @media (max-width: 1420px) {
     display: none;
   }
