@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import Burger from "../burger/Burger";
+import Modal from "../modal/Modal";
 
 const Header = () => {
   return (
@@ -10,11 +11,33 @@ const Header = () => {
       <StyleH1>007</StyleH1>
       <StyleMenu>
         <StyleNav>
-          <li>Home</li>
-          <li>About</li>
-          <li>Tech Stack</li>
-          <li>Projeccts</li>
-          <li>Contact</li>
+          <Modal
+            title={"Hello, thank you for visiting my portfolio made with love"}
+            decription={"This portfolio will be updated"}
+            name={"Home"}
+          />
+          <Modal
+            title={"The purpose of my life is developmente"}
+            decription={"A young guy without bad sports habits"}
+            name={"About"}
+          />
+          <Modal
+            title={"My stack is constantly growing"}
+            decription={
+              "HTML,CSS,SASS,LESS,Javscript,ES6,TypeScript,React,NodeJs,Github,Firebase"
+            }
+            name={"Tech Stack"}
+          />
+          <Modal
+            title={"My projects is constantly growing"}
+            decription={"I make Calculator, Bike Shop, after soon...."}
+            name={"Project"}
+          />
+          <Modal
+            title={"My contacts"}
+            decription={"Viber: +375299766537; What'sap: +79400568432; Telegramm:https://t.me/Vasiliy_starovojtov "}
+            name={"Contact"}
+          />
         </StyleNav>
         <Burger />
         <StyleA>
@@ -38,7 +61,7 @@ const StyleHeader = styled.header`
   font-size: 20px;
   margin: 20px auto;
   @media (max-width: 1420px) {
-  width: 90%;
+    width: 90%;
   }
   @media (max-width: 768px) {
     flex-direction: column;
@@ -53,7 +76,6 @@ const StyleH1 = styled.h1`
   left: 0;
   top: 0;
   margin: 0;
-
 `;
 
 const StyleNav = styled.nav`

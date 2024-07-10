@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Modal from "../modal/Modal";
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,15 +23,35 @@ const Burger = () => {
           &times;
         </button>
         <ul>
-          <li>
-            <a href="#Home">Home</a>
-          </li>
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
+          <Modal
+            title={"Hello, thank you for visiting my portfolio made with love"}
+            decription={"This portfolio will be updated"}
+            name={"Home"}
+          />
+          <Modal
+            title={"The purpose of my life is developmente"}
+            decription={"A young guy without bad sports habits"}
+            name={"About"}
+          />
+          <Modal
+            title={"My stack is constantly growing"}
+            decription={
+              "HTML,CSS,SASS,LESS,Javscript,ES6,TypeScript,React,NodeJs,Github,Firebase"
+            }
+            name={"Tech Stack"}
+          />
+          <Modal
+            title={"My projects is constantly growing"}
+            decription={"I make Calculator, Bike Shop, after soon...."}
+            name={"Project"}
+          />
+          <Modal
+            title={"My contacts"}
+            decription={
+              "Viber: +375299766537; What'sap: +79400568432; Telegramm:https://t.me/Vasiliy_starovojtov "
+            }
+            name={"Contact"}
+          />
           <StyleA>
             <a href="https://github.com/Vasyaruberoid">
               <FaGithub size={"25px"} />

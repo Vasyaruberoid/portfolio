@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Modal from "../modal/Modal";
 
 function Footer() {
   return (
@@ -21,11 +22,35 @@ function Footer() {
       </StyleMidFooter>
       <StyleBotFooter>
         <StyleNav>
-          <li>Home</li>
-          <li>About</li>
-          <li>Tech Stack</li>
-          <li>Projeccts</li>
-          <li>Contact</li>
+          <Modal
+            title={"Hello, thank you for visiting my portfolio made with love"}
+            decription={"This portfolio will be updated"}
+            name={"Home"}
+          />
+          <Modal
+            title={"The purpose of my life is developmente"}
+            decription={"A young guy without bad sports habits"}
+            name={"About"}
+          />
+          <Modal
+            title={"My stack is constantly growing"}
+            decription={
+              "HTML,CSS,SASS,LESS,Javscript,ES6,TypeScript,React,NodeJs,Github,Firebase"
+            }
+            name={"Tech Stack"}
+          />
+          <Modal
+            title={"My projects is constantly growing"}
+            decription={"I make Calculator, Bike Shop, after soon...."}
+            name={"Project"}
+          />
+          <Modal
+            title={"My contacts"}
+            decription={
+              "Viber: +375299766537; What'sap: +79400568432; Telegramm:https://t.me/Vasiliy_starovojtov "
+            }
+            name={"Contact"}
+          />
         </StyleNav>
         <div>
           <p>Designed and built by Vasiliy Starovoytov with Love & Coffee</p>
@@ -36,7 +61,14 @@ function Footer() {
 }
 
 const StyleFooter = styled.footer`
-margin-top:50%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+  }
 `;
 
 const StyleNav = styled.nav`
@@ -45,6 +77,10 @@ const StyleNav = styled.nav`
   list-style-type: none;
   padding: 10px;
   gap: 30px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const StyleMidFooter = styled.div`
@@ -52,6 +88,10 @@ const StyleMidFooter = styled.div`
   justify-content: space-around;
   border-bottom: 2px solid #ebeaed;
   width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const StyleBotFooter = styled.div`
@@ -60,6 +100,10 @@ const StyleBotFooter = styled.div`
   width: 85%;
   margin: 0 auto;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const StyleA = styled.div`

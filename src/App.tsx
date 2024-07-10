@@ -4,7 +4,6 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 
-
 function App() {
   return (
     <StyleAcc>
@@ -17,12 +16,11 @@ function App() {
 
 export default App;
 
-const StyleAcc = styled.div`
+const StyleAcc = styled.body`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
 `;

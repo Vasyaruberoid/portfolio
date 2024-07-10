@@ -4,6 +4,7 @@ import Group from "../group/Group";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import img from "../../icons/I.jpg";
+import Communicate from "../comunnicate/Communicate";
 
 function Main() {
   return (
@@ -22,6 +23,7 @@ function Main() {
       <Group />
       <Skills />
       <Projects />
+      <Communicate/>
     </StyleMain>
   );
 }
@@ -30,8 +32,9 @@ const StyleMain = styled.main`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
   margin-top: 200px;
 `;
 
@@ -41,11 +44,12 @@ const StyleBox = styled.div`
   max-width: 100%;
   height: 100vh;
   width: 1300px;
-  margin: 0 auto @media (max-width: 360px) {
+  margin: 0 auto;
+  @media (max-width: 360px) {
     margin: 0 auto;
-    div {
-      text-align: center;
-    }
+    display: flex;
+    flex-direction: column;
+   text-align: center;
   }
 `;
 
@@ -70,7 +74,9 @@ const StyleImg = styled.img`
     margin-top: 30px;
   }
   @media (max-width: 360px) {
-    width: 40%;
+    width: 60%;
+    align-items: center;
+
   }
 `;
 
