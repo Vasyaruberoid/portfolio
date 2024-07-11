@@ -5,16 +5,26 @@ import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import img from "../../icons/I.jpg";
 import Communicate from "../comunnicate/Communicate";
+import Typewriter from 'typewriter-effect';
 
 function Main() {
   return (
     <StyleMain>
       <StyleBox>
+
         <StyleH1>
           Hi 👋,
           <p>My name is</p>
           <p>Vasiliy Starovoytov</p>
-          <p>I build things for web</p>
+          <p className="disableP">I'm a Front end developer</p>
+          <Typewriter
+  options={{
+    strings: ["I'm a Front end developer"],
+    autoStart: true,
+    loop: true,
+    delay:150,
+  }}
+/>
         </StyleH1>
         <div>
           <StyleImg src={img} alt="myPhoto" />
@@ -23,7 +33,7 @@ function Main() {
       <Group />
       <Skills />
       <Projects />
-      <Communicate/>
+      <Communicate />
     </StyleMain>
   );
 }
@@ -49,7 +59,7 @@ const StyleBox = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-   text-align: center;
+    text-align: center;
   }
 `;
 
@@ -80,9 +90,13 @@ const StyleImg = styled.img`
   }
 `;
 
+
+
 const StyleH1 = styled.h1`
   font-size: 45px;
-
+.disableP{
+display: none;
+}
   @media (max-width: 360px) {
     font-size: 40px;
     line-height: 1.3;

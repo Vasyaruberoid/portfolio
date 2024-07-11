@@ -15,6 +15,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <h2>Things I’ve built so far</h2>
       </div>
+      
       <StyleWrapper>
         <BoxProject
           image={img1}
@@ -87,8 +88,8 @@ const StyleProjects = styled.div`
   margin: 20px auto;
   height: 100%;
   max-width: 100%;
-  padding:100px;
-  
+  padding: 100px;
+
   p {
     align-items: center;
     justify-content: center;
@@ -106,8 +107,8 @@ const StyleProjects = styled.div`
     background: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: fill;
   }
-
 `;
 
 const StyleWrapper = styled.div`
@@ -116,7 +117,7 @@ const StyleWrapper = styled.div`
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   margin: 0px auto;
-  height:100%;
+  height: 100%;
   @media (max-width: 1028px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-row-columns: repeat(3, 1fr);
@@ -133,6 +134,7 @@ const StyleWrapper = styled.div`
     gap: 25px;
   }
 `;
+
 
 
 export default Projects;
