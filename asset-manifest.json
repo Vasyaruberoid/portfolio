@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.38e7b0b7.js",
+    "main.js": "/portfolio/static/js/main.4d31edfc.js",
     "static/media/BikeShop.png": "/portfolio/static/media/BikeShop.1bca5d351685d84cba57.png",
     "static/media/stub1.png": "/portfolio/static/media/stub1.527950d78ac6d0447b92.png",
     "static/media/stub2.png": "/portfolio/static/media/stub2.caa51614ec8896d14293.png",
@@ -9,9 +9,9 @@
     "static/media/stub3.png": "/portfolio/static/media/stub3.0de68ccfc8dfb786dc81.png",
     "static/media/Calc.png": "/portfolio/static/media/Calc.84b42892d0396b744ab5.png",
     "index.html": "/portfolio/index.html",
-    "main.38e7b0b7.js.map": "/portfolio/static/js/main.38e7b0b7.js.map"
+    "main.4d31edfc.js.map": "/portfolio/static/js/main.4d31edfc.js.map"
   },
   "entrypoints": [
-    "static/js/main.38e7b0b7.js"
+    "static/js/main.4d31edfc.js"
   ]
 }
