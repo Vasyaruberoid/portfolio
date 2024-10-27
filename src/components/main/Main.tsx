@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Group from "../group/Group";
 import Skills from "../skills/Skills";

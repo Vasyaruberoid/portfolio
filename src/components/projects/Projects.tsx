@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import BoxProject from "../boxproject/BoxProject";
 import img1 from "../../icons/Calc.png";
 import img2 from "../../icons/BikeShop.png";
-import img3 from "../../icons/stub1.png";
+import img3 from "../../icons/Todolist.png";
 import img4 from "../../icons/stub2.png";
 import img5 from "../../icons/stub3.png";
 import img6 from "../../icons/stub4.png";
@@ -33,19 +32,19 @@ const Projects = () => {
           decription={
             "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
           }
-          steck={"HTML , Css , JavaScript, React"}
-          primera={""}
-          pageProject={""}
+          steck={"HTML , Css , TypeScript, React"}
+          primera={"https://vasyaruberoid.github.io/BikeShop/"}
+          pageProject={"https://github.com/Vasyaruberoid/BikeShop"}
         />
         <BoxProject
           image={img3}
-          title={"Comming soon ....."}
+          title={"TodoList"}
           decription={
             " This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
           }
-          steck={"HTML , Css , JavaScript, React"}
-          primera={""}
-          pageProject={""}
+          steck={"HTML , Css , TypeScript, React"}
+          primera={"https://vasyaruberoid.github.io/TodoList/"}
+          pageProject={"https://github.com/Vasyaruberoid/TodoList"}
         />
         <BoxProject
           image={img4}
@@ -94,6 +93,7 @@ const StyleProjects = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    padding: 20px
   }
   h1 {
     font-size: 48px;
@@ -103,7 +103,7 @@ const StyleProjects = styled.div`
   }
   img {
     width: 100%;
-    height: 40%;
+    height: 260px;
     background: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -116,7 +116,7 @@ const StyleWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  margin: 0px auto;
+  margin: 50px auto;
   height: 100%;
   @media (max-width: 1028px) {
     grid-template-columns: repeat(2, 1fr);

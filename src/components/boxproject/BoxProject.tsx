@@ -42,14 +42,16 @@ const StyleBlock = styled.div`
   box-shadow: 2px 2px 100px 0px #00000033;
   border-radius: 20px;
   p {
-    font-size: 25px;
-
+    font-size: 25px;  
     margin: 0 auto;
   }
-    img{
-    width:100%;
-    height:200px;
-    }
+  img {
+    width: 100%;
+    background: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: fill;
+  }
   a {
     display: flex;
   }
@@ -73,18 +75,17 @@ const StyleBlock = styled.div`
 `;
 
 const StyleWrapper = styled.div`
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-height: 100%;
-
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
 `;
 
 const StyleA = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  
+
   a {
     text-decoration: none;
   }

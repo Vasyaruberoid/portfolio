@@ -55,7 +55,7 @@ const Group = () => {
           </p>
         </StyleDiv>
         <StyleBlock>
-          <h2>Middle+ Front Developer</h2>
+          <h2>Junior+ Front Developer</h2>
           <StyleBtn>intership</StyleBtn>
         </StyleBlock>
         <StyleDiv>
@@ -68,7 +68,7 @@ const Group = () => {
             Minsk
           </p>
           <FaCalendarAlt />
-          <p>June 2024 - Dec 2024</p>
+          <p>June 2024 - January 2025</p>
         </StyleDiv>
       </StyleWrapperWork>
       <StyleWrapperEduction>
