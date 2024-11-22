@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -35,7 +34,9 @@ const Header = () => {
           />
           <Modal
             title={"My contacts"}
-            decription={"Viber: +375299766537; What'sap: +79400568432; Telegramm:https://t.me/Vasiliy_starovojtov "}
+            decription={
+              "Viber: +375299766537; What'sap: +79400568432; Telegramm:https://t.me/Vasiliy_starovojtov "
+            }
             name={"Contact"}
           />
         </StyleNav>
@@ -83,7 +84,6 @@ const StyleNav = styled.nav`
   justify-content: space-between;
   list-style-type: none;
   gap: 30px;
-
   @media (max-width: 1420px) {
     display: none;
   }

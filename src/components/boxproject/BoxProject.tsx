@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
@@ -9,13 +8,13 @@ type BoxProjectPropsType = {
   steck: string;
   primera: string;
   pageProject: string;
-  image?: string;
+  image: string;
 };
 
 const BoxProject = (props: BoxProjectPropsType) => {
   return (
     <StyleBlock>
-      <img src={props.image} alt=" " />
+      <img src={props.image} alt="myImg" />
       <StyleWrapper>
         <h2>{props.title}</h2>
         <p>{props.decription}</p>
@@ -42,12 +41,11 @@ const StyleBlock = styled.div`
   box-shadow: 2px 2px 100px 0px #00000033;
   border-radius: 20px;
   p {
-    font-size: 25px;  
+    font-size: 25px;
     margin: 0 auto;
   }
   img {
-    width: 100%;
-    background: black;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: fill;
@@ -57,7 +55,6 @@ const StyleBlock = styled.div`
   }
   @media (max-width: 1028px) {
     width: 40vw;
-    height: 100vh;
   }
   @media (max-width: 768px) {
     height: 100vh;

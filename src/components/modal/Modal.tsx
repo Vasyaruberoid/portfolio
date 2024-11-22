@@ -22,7 +22,7 @@ function Modal(props: ModalPropsType) {
     if (event.target === event.currentTarget) {
       closeModal();
     }
-  }
+  };
   return (
     <div>
       <BtnName onClick={openModal}>{props.name}</BtnName>
@@ -51,7 +51,6 @@ const ModalContainer = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 100;
-
 `;
 
 const ModalContent = styled.div`
@@ -75,11 +74,10 @@ const ModalCloseButton = styled.button`
 `;
 
 const BtnName = styled.button`
-border:none;
-background: none;
-cursor: pointer;
-color: black;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
 `;
-
 
 export default Modal;

@@ -74,11 +74,11 @@ const WrapperStyle = styled.div`
     margin-top: 20px;
     background-color: rgba(245, 245, 245, 1);
   }
-    @media(max-width:768px){
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    }
+  }
 `;
 
 const ContainerWithMe = styled.div`
