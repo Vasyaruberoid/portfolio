@@ -3,7 +3,7 @@ import BoxProject from "../boxproject/BoxProject";
 import img1 from "../../icons/Calc.png";
 import img2 from "../../icons/BikeShop.png";
 import img3 from "../../icons/Todolist.png";
-import img4 from "../../icons/stub2.png";
+import img4 from "../../icons/Dino.png";
 import img5 from "../../icons/stub3.png";
 import img6 from "../../icons/stub4.png";
 
@@ -14,7 +14,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <h2>Things I’ve built so far</h2>
       </div>
-      
+
       <StyleWrapper>
         <BoxProject
           image={img1}
@@ -32,7 +32,7 @@ const Projects = () => {
           decription={
             "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
           }
-          steck={"HTML , Css , TypeScript, React"}
+          steck={" React, TypeScript, MaterialUI, Redux, Axios,"}
           primera={"https://vasyaruberoid.github.io/BikeShop/"}
           pageProject={"https://github.com/Vasyaruberoid/BikeShop"}
         />
@@ -42,19 +42,17 @@ const Projects = () => {
           decription={
             " This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
           }
-          steck={"HTML , Css , TypeScript, React"}
+          steck={" TypeScript, React , MaterialUI "}
           primera={"https://vasyaruberoid.github.io/TodoList/"}
           pageProject={"https://github.com/Vasyaruberoid/TodoList"}
         />
         <BoxProject
           image={img4}
-          title={"Comming soon ....."}
-          decription={
-            "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
-          }
-          steck={"HTML , Css , JavaScript, React"}
-          primera={""}
-          pageProject={""}
+          title={"Dino T-Rex"}
+          decription={"This is sample project description"}
+          steck={" React, MaterialUI , TypeScript"}
+          primera={"https://vasyaruberoid.github.io/DinoGame/"}
+          pageProject={"https://github.com/Vasyaruberoid/DinoGame"}
         />
         <BoxProject
           image={img5}
@@ -93,7 +91,7 @@ const StyleProjects = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    padding: 20px
+    padding: 20px;
   }
   h1 {
     font-size: 48px;
@@ -134,7 +132,5 @@ const StyleWrapper = styled.div`
     gap: 25px;
   }
 `;
-
-
 
 export default Projects;
